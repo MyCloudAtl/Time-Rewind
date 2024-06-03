@@ -1,0 +1,104 @@
+body {
+    background-image: linear-gradient(to right, #09203F, #537895, #596164, #868F96, #596164, #537895, #09203F);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Abril Fatface", serif;
+}
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr 1fr 0.3fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "h1 h1 h1"
+    "group1 group2 group3"
+    "h2 h2 h2"
+    "group4 group5 group6";
+    grid-gap: 0.2rem;
+} 
+header {
+    font-size: xxx-large;
+    grid-area: header;
+    text-align: center;
+    text-shadow:
+    1px 1px 1px whitesmoke,
+    2px 2px 1px rgb(17, 116, 246);
+}
+#movies {
+    grid-area: h1;
+    text-decoration: underline;
+    text-decoration-color: gainsboro;
+    text-align: center;
+}
+#group1 {
+    background-image: url("https://mshanken.imgix.net/cao/bolt/2022-03/1647463313_godfather0422.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30%;
+    grid-area: group1;
+    text-align: center;
+    color: aliceblue;
+    font-size: xx-large;
+}
+#group2 {
+    background-image: url("https://images.bauerhosting.com/legacy/empire-tmdb/films/680/images/mte63qJaVnoxkkXbHkdFujBnBgd.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=undefined&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30%;
+    grid-area: group2;
+    text-align: center;
+    color: aliceblue;
+    font-size: xx-large;
+}
+#group3 {
+    background-image: url("https://cdn.britannica.com/34/201734-050-2B1ECD3E/Dominic-Monaghan-Merry-scene-Elijah-Wood-Frodo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30%;
+    grid-area: group3;
+    text-align: center;
+    color: aliceblue;
+    font-size: xx-large;
+}
+#music {
+    grid-area: h2;
+    text-align: center;
+    text-decoration: underline;
+}
+#group4 {
+    background-image: url("https://api.time.com/wp-content/uploads/2015/10/queen.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30%;
+    grid-area: group4;
+    text-align: center;
+    color: aliceblue;
+    font-size: xx-large;
+}
+#group5 {
+    background-image: url("https://cdn.discordapp.com/attachments/1239672941587988562/1247270973825355796/nirvanacover.png?ex=665f6b1d&is=665e199d&hm=6e3f4de234ffc620ec655c7ab699ddf167d1d3f5772d4be3c8aa250bf8b09d59&");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30%;
+    grid-area: group5;
+    text-align: center;
+    color: aliceblue;
+    font-size: xx-large;
+}
+#group6 {
+    background-image: url("https://media.newyorker.com/photos/5909520d1c7a8e33fb38a644/master/pass/adele-oscars.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30%;
+    grid-area: group6;
+    text-align: center;
+    color: aliceblue;
+    font-size: xx-large;
+}
