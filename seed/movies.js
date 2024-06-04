@@ -14,19 +14,13 @@ const resetCollections = async () => {
 
 const main = async () => {
     resetCollections()
-    const genxB = await Year.find({ year:'Generation X (Begin 1965-1970)'})
-    const genxM = await Year.find({ year:'Generation X (Mid 1970-1975)'})
-    const genxE = await Year.find({ year:'Generation X (End 1975-1980)'})
-    const millB = await Year.find({ year:'Millennial (Begin 1981-1986)'})
-    const millM = await Year.find({ year:'Millennial (Mid 1986-1991)'})
-    const millE = await Year.find({ year:'Millennial (End 1991-1996)'})
-    const genzB = await Year.find({ year:'Generation Z (Begin 1997-2002)'})
-    const genzM = await Year.find({ year:'Generation Z (Mid 2002-2007)'})
-    const genzE = await Year.find({ year:'Generation Z (End 2007-2012)'})
+    const genx = await Year.find({ year:'Generation X'})
+    const mill = await Year.find({ year:'Millennial'})
+    const genz = await Year.find({ year:'Generation Z'})
 
   const movies = [
     {
-        year_id: genxE[0]._id,
+        year_id: genx[0]._id,
         image: "https://assets.scriptslug.com/live/img/posters/x/_posterPageWebp/5819/halloween-1978.webp?utime=20240519142120",
         title: "Halloween (1978)",
         genre: "Horror",
@@ -35,7 +29,7 @@ const main = async () => {
         link: "https://youtu.be/sfZnbUf-tUE",
     },
     {
-        year_id: genxB[0]._id,
+        year_id: genx[0]._id,
         image: "https://upload.wikimedia.org/wikipedia/en/thumb/9/91/Night_of_the_Living_Dead_%281968%29_poster.jpg/220px-Night_of_the_Living_Dead_%281968%29_poster.jpg",
         title: "Night of the Living Dead (1968)",
         genre: "Horror",
@@ -44,7 +38,7 @@ const main = async () => {
         link: "https://youtu.be/pd5a0gs-UCQ",
     },
     {
-        year_id: genxM[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/I/51276E72APL._SX300_SY300_QL70_FMwebp_.jpg",
         title: "The Texas Chain Saw Massacre (1974)",
         genre: "Horror",
@@ -53,7 +47,7 @@ const main = async () => {
         link: "https://youtu.be/BKn9QIaMgtQ",
     },
     {
-        year_id: genxB[0]._id,
+        year_id: genx[0]._id,
         image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2036/20369574_sa.jpg;maxHeight=150;maxWidth=200",
         title: "The Birds (1963)",
         genre: "Horror",
@@ -62,7 +56,7 @@ const main = async () => {
         link: "https://youtu.be/towd2xnkd9U",
     },
     {
-        year_id: genxM[0]._id,
+        year_id: genx[0]._id,
         image: "https://i.ebayimg.com/images/g/MLIAAOSwxdZiNMOH/s-l1600.webp",
         title: "The Exorcist (1973)",
         genre: "Horror",
@@ -71,7 +65,7 @@ const main = async () => {
         link: "https://youtu.be/YDGw1MTEe9k",
     },
     {
-        year_id: millB[0]._id,
+        year_id: mill[0]._id,
         image: "https://m.media-amazon.com/images/I/514-4yC5uUL._SX300_SY300_QL70_FMwebp_.jpg",
         title: "A Nightmare on Elm Street (1984)",
         genre: "Horror",
@@ -80,7 +74,7 @@ const main = async () => {
         link: "https://youtu.be/dCVh4lBfW-c",
     },
     {
-        year_id: millB[0]._id,
+        year_id: mill[0]._id,
         image: "https://s3.amazonaws.com/static.rogerebert.com/uploads/movie/movie_poster/the-shining-1980/large_zc5y5OwKSV9MDXpfWxwrOjyRHsq.jpg",
         title: "The Shining (1980)",
         genre: "Horror",
@@ -89,7 +83,7 @@ const main = async () => {
         link: "https://youtu.be/S014oGZiSdI"
     },
     {
-        year_id: millE[0]._id,
+        year_id: mill[0]._id,
         image: "https://blob.cede.ch/catalog/17419000/17419965_1_92.jpg?v=1",
         title: "The Silence of the Lambs (1991)",
         genre: "Horror",
@@ -98,7 +92,7 @@ const main = async () => {
         link: "https://youtu.be/6iB21hsprAQ",
     },
     {
-        year_id: millB[0]._id,
+        year_id: mill[0]._id,
         image: "https://sidewalkfest.com/wp-content/uploads/2023/10/xPazCcKp62IshnLVf9BLAjf9vgC-1024x1536.jpg",
         title: "Poltergeist (1982)",
         genre: "Horror",
@@ -107,7 +101,7 @@ const main = async () => {
         link: "https://youtu.be/9eZgEKjYJqA",
     },
     {
-        year_id: millE[0]._id,
+        year_id: mill[0]._id,
         image: "https://m.media-amazon.com/images/I/5127F505WAL._SX300_SY300_QL70_FMwebp_.jpg",
         title: "Scream (1996)",
         genre: "Horror",
@@ -116,7 +110,7 @@ const main = async () => {
         link: "https://youtu.be/i3J6ACKQ7K0",
     },
     {
-        year_id: genzB[0]._id,
+        year_id: genz[0]._id,
         image: "https://static.wikia.nocookie.net/disney/images/6/66/The_sixth_sense.jpg/revision/latest/scale-to-width-down/1000?cb=20230311195554",
         title: "The Sixth Sense (1999)",
         genre: "Horror",
@@ -125,7 +119,7 @@ const main = async () => {
         link: "https://youtu.be/3-ZP95NF_Wk"
     },
     {
-        year_id: genzB[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BMTY2ODc2NTQ2OF5BMl5BanBnXkFtZTYwNzA4OTU3._V1_.jpg",
         title: "The Ring (2002)",
         genre: "Horror",
@@ -134,7 +128,7 @@ const main = async () => {
         link: "https://youtu.be/mTACCgSWu8E"
     },
     {
-        year_id: genzE[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BMjY1NjcxODQ4MV5BMl5BanBnXkFtZTcwMzUxNjM4Mg@@._V1_FMjpg_UX1000_.jpg",
         title: "Paranormal Activity (2007)",
         genre: "Horror",
@@ -143,7 +137,7 @@ const main = async () => {
         link: "https://youtu.be/F_UxLEqd074"
     },
     {
-        year_id: genzM[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BM2M1MzI1MWYtYmM2ZC00OWY3LTk0ZGMtNmRkNzU1NzEzMWE5XkEyXkFqcGdeQXVyODUwOTkwODk@._V1_FMjpg_UX1000_.jpg",
         title: "Saw (2004)",
         genre: "Horror",
@@ -152,7 +146,7 @@ const main = async () => {
         link: "https://youtu.be/S-1QgOMQ-ls",
     },
     {
-        year_id: genzM[0]._id,
+        year_id: genz[0]._id,
         image: "https://horrorhothousereview.wordpress.com/wp-content/uploads/2013/06/the-grudge-_2004_.jpg",
         title: "The Grudge (2004)",
         genre: "Horror",
@@ -161,7 +155,7 @@ const main = async () => {
         link: "https://youtu.be/_Amj1SVOf4U",
     },
     {
-        year_id: genxB[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BOTAzMTJkYTQtYTdkOS00OTNiLWFmMDctMzcwNGJhYTY4OGM5XkEyXkFqcGdeQXVyNzI1NzMxNzM@._V1_.jpg",
         title: "The Graduate (1967)",
         genre: "Comedy",
@@ -170,7 +164,7 @@ const main = async () => {
         link: "https://youtu.be/6KnSucVko1s",
     },
     {
-        year_id: genxB[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BMTYyNDQwOTc5NF5BMl5BanBnXkFtZTYwNjk5OTM5._V1_.jpg",
         title: "The Odd Couple (1968)",
         genre: "Comedy",
@@ -179,7 +173,7 @@ const main = async () => {
         link: "https://youtu.be/33ZvO26hP7M"
     },
     {
-        year_id: genxM[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BZGZmMWE1MDYtNzAyNC00MDMzLTgzZjQtNTQ5NjYzN2E4MzkzXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_.jpg",
         title: "Blazing Saddles (1974)",
         genre: "Comedy",
@@ -188,7 +182,7 @@ const main = async () => {
         link: "https://youtu.be/VKayG1TrfuE",
     },
     {
-        year_id: genxM[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BN2IyNTE4YzUtZWU0Mi00MGIwLTgyMmQtMzQ4YzQxYWNlYWE2XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
         title: "Monty Python and the Holy Grail (1975)",
         genre: "Comedy",
@@ -197,7 +191,7 @@ const main = async () => {
         link: "https://youtu.be/6yOIjSF8tmo",
     },
     {
-        year_id: genxE[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BOGI2NDI3OGQtNTE4Mi00YmYwLThmMTItMzU5MzQ3ZGUyMWJjXkEyXkFqcGdeQXVyNjc5NjEzNA@@._V1_.jpg",
         title: "Animal House (1978)",
         genre: "Comedy",
@@ -206,7 +200,7 @@ const main = async () => {
         link: "https://youtu.be/KWjtI6n5xWM",
     },
     {
-        year_id: millB[0]._id,
+        year_id: mill[0]._id,
         image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.scriptslug.com%2Fscript%2Fghostbusters-1989&psig=AOvVaw0KzzBjRGCMWhdjyKVpczOJ&ust=1717271685242000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCICBwdzVuIYDFQAAAAAdAAAAABAE",
         title: "Ghostbusters (1984)",
         genre: "Comedy",
@@ -215,7 +209,7 @@ const main = async () => {
         link: "https://youtu.be/wQAljlSmjC8",
     },
     {
-        year_id: millE[0]._id,
+        year_id: mill[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BZDQwMjNiMTQtY2UwYy00NjhiLTk0ZWEtZWM5ZWMzNGFjNTVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
         title: "Dumb and Dumber (1994)",
         genre: "Comedy",
@@ -224,7 +218,7 @@ const main = async () => {
         link: "https://youtu.be/l13yPhimE3o"
     },
     {
-        year_id: millM[0]._id,
+        year_id: mill[0]._id,
         image: "https://s3.us-east-1.amazonaws.com/mt-website-prod-contentbucket-1tg1jr7b5zn9a/images/movie-posters/HO00005195.jpg",
         title: "Ferris Bueller's Day Off (1986)",
         genre: "Comedy",
@@ -233,7 +227,7 @@ const main = async () => {
         link: "https://youtu.be/0ZDbKhkLxTs"
     },
     {
-        year_id: millM[0]._id,
+        year_id: mill[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BNWRjZmFlMDAtZjljYy00YjUwLTgyMDQtMTI5ZjhiZTNkNDNhXkEyXkFqcGdeQXVyMTUzMDUzNTI3._V1_FMjpg_UX1000_.jpg",
         title: "Planes, Trains and Automobiles (1987)",
         genre: "Comedy",
@@ -242,7 +236,7 @@ const main = async () => {
         link: "https://youtu.be/ZfnvrPZSFb8",
     },
     {
-        year_id: millB[0]._id,
+        year_id: mill[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BZjA3YjdhMWEtYjc2Ni00YzVlLWI0MTUtMGZmNTJjNmU0Yzk2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
         title: "Airplane! (1980)",
         genre: "Comedy",
@@ -251,7 +245,7 @@ const main = async () => {
         link: "https://youtu.be/07pPmCfKi3U",
     },
     {
-        year_id: genzB[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BNDQwMTAzOTkxNV5BMl5BanBnXkFtZTgwMjc0MTAwMjE@._V1_.jpg",
         title: "The Big Lebowski (1998)",
         genre: "Comedy",
@@ -260,7 +254,7 @@ const main = async () => {
         link: "https://youtu.be/cd-go0oBF4Y",
     },
     {
-        year_id: genzM[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BMTQ2MzYwMzk5Ml5BMl5BanBnXkFtZTcwOTI4NzUyMw@@._V1_FMjpg_UX1000_.jpg",
         title: "Anchorman: The Legend of Ron Burgundy (2004)",
         genre: "Comedy",
@@ -269,7 +263,7 @@ const main = async () => {
         link: "https://youtu.be/QvJ1K0_JzFI",
     },
     {
-        year_id: genzM[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BY2VkMDg4ZTYtN2M3Yy00NWZiLWE2ODEtZjU5MjZkYWNkNGIzXkEyXkFqcGdeQXVyODY5Njk4Njc@._V1_FMjpg_UX1000_.jpg",
         title: "Superbad (2007)",
         genre: "Comedy",
@@ -278,7 +272,7 @@ const main = async () => {
         link: "https://youtu.be/4eaZ_48ZYog",
     },
     {
-        year_id: genzE[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BMjAyOTMyMzUxNl5BMl5BanBnXkFtZTcwODI4MzE0NA@@._V1_FMjpg_UX1000_.jpg",
         title: "Bridesmaids (2011)",
         genre: "Comedy",
@@ -287,7 +281,7 @@ const main = async () => {
         link: "https://youtu.be/FNppLrmdyug",
     },
     {
-        year_id: genzE[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BNGQwZjg5YmYtY2VkNC00NzliLTljYTctNzI5NmU3MjE2ODQzXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
         title: "The Hangover (2009)",
         genre: "Comedy",
@@ -296,7 +290,7 @@ const main = async () => {
         link: "https://youtu.be/tcdUhdOlz9M"
     },
     {
-        year_id: genxM[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BMjA1N2JlMjItMTExZC00NTIxLWE2YTYtY2ZkM2M5OWM3M2YyXkEyXkFqcGdeQXVyNTc1NTQxODI@._V1_.jpg",
         title: "The Towering Inferno (1974)",
         genre: "Action, Drama, Thriller",
@@ -305,7 +299,7 @@ const main = async () => {
         link: "https://youtu.be/tgWgUUT-YW4"
     },
     {
-        year_id: genxM[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BNGZiMTkyNzQtMDdmZi00ZDNkLWE4YTAtZGNlNTIzYzQyMGM2XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_FMjpg_UX1000_.jpg",
         title: "Enter the Dragon (1973)",
         genre: "Action, Crime, Drama",
@@ -314,7 +308,7 @@ const main = async () => {
         link: "https://youtu.be/5RGju9NuoOU"
     },
     {
-        year_id: genxM[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BMzdhMTM2YTItOWU2YS00MTM0LTgyNDYtMDM1OWM3NzkzNTM2XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_.jpg",
         title: "Dirty Harry (1971)",
         genre: "Action",
@@ -323,7 +317,7 @@ const main = async () => {
         link: "https://youtu.be/YgRjIEwMYQ4",
     },
     {
-        year_id: genxE[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_.jpg",
         title: "Star Wars: Episode IV - A New Hope (1977)",
         genre: "Action",
@@ -332,7 +326,7 @@ const main = async () => {
         link: "https://youtu.be/vZ734NWnAHA",
     },
     {
-        year_id: genxE[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BMTM4Mjg5ODEzMV5BMl5BanBnXkFtZTcwMDc3NDk0NA@@._V1_.jpg",
         title: "Mad Max (1979)",
         genre: "Action, Adventure, Sci-Fi",
@@ -341,7 +335,7 @@ const main = async () => {
         link: "https://youtu.be/caHnaRq8Qlg"
     },
     {
-        year_id: millB[0]._id,
+        year_id: mill[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BYTViNzMxZjEtZGEwNy00MDNiLWIzNGQtZDY2MjQ1OWViZjFmXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
         title: "The Terminator (1984)",
         genre: "Action",
@@ -350,7 +344,7 @@ const main = async () => {
         link: "https://youtu.be/nGrW-OR2uDk",
     },
     {
-        year_id: millM[0]._id,
+        year_id: mill[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgxNmQtYTBmMDgwZmNmNjkxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
         title: "Die Hard (1988)",
         genre: "Action",
@@ -359,7 +353,7 @@ const main = async () => {
         link: "https://youtu.be/gYWvwkXreaI",
     },
     {
-        year_id: millM[0]._id,
+        year_id: mill[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BZTllNWNlZjctMWQwMS00ZDc3LTg5ZjMtNzhmNzhjMmVhYTFlXkEyXkFqcGdeQXVyNTc1NTQxODI@._V1_.jpg",
         title: "Lethal Weapon (1987)",
         genre: "Action, Crime, Thriller",
@@ -368,7 +362,7 @@ const main = async () => {
         link: "https://youtu.be/bKeW-MGu-qQ"
     },
     {
-        year_id: millE[0]._id,
+        year_id: mill[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BNDc2NDQ0MDk3N15BMl5BanBnXkFtZTYwNDg3Mzk4._V1_.jpg",
         title: "Speed (1994)",
         genre: "Action, Thriller",
@@ -377,7 +371,7 @@ const main = async () => {
         link: "https://youtu.be/8piqd2BWeGI"
     },
     {
-        year_id: millB[0]._id,
+        year_id: mill[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BODBmOWU2YWMtZGUzZi00YzRhLWJjNDAtYTUwNWVkNDcyZmU5XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_.jpg",
         title: "First Blood (1982)",
         genre: "Action",
@@ -386,7 +380,7 @@ const main = async () => {
         link: "https://youtu.be/oXngES_l_HQ",
     },
     {
-        year_id: genzB[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
         title: "The Matrix (1999)",
         genre: "Action",
@@ -395,7 +389,7 @@ const main = async () => {
         link: "https://youtu.be/vKQi3bBA1y8",
     },
     {
-        year_id: genzB[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BM2JkNGU0ZGMtZjVjNS00NjgyLWEyOWYtZmRmZGQyN2IxZjA2XkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_FMjpg_UX1000_.jpg",
         title: "The Bourne Identity (2002)",
         genre: "Action",
@@ -404,7 +398,7 @@ const main = async () => {
         link: "https://youtu.be/gjwE_8uFMbA",
     },
     {
-        year_id: genzE[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg",
         title: "The Dark Knight (2008)",
         genre: "Action",
@@ -413,7 +407,7 @@ const main = async () => {
         link: "https://youtu.be/EXeTwQWrcwY",
     },
     {
-        year_id: genzE[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BMjExMjkwNTQ0Nl5BMl5BanBnXkFtZTcwNTY0OTk1Mw@@._V1_.jpg",
         title: "Inception (2010)",
         genre: "Action",
@@ -422,7 +416,7 @@ const main = async () => {
         link: "https://youtu.be/YoHD9XEInc0",
     },
     {
-        year_id: genzE[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
         title: "The Avengers (2012)",
         genre: "Action",
@@ -431,7 +425,7 @@ const main = async () => {
         link: "https://youtu.be/eOrNdBpGMv8",
     },
     {
-        year_id: genxE[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BZmUyMDEyOTgtZmUwOS00NTdkLThlNzctNTM1ODQ4M2VhMjdhXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg",
         title: "Grease (1978)",
         genre: "Romance, Musical",
@@ -440,7 +434,7 @@ const main = async () => {
         link: "https://youtu.be/THd96gHV7Tg"
     },
     {
-        year_id: genxE[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/I/91L8PmPjhSL._AC_UF894,1000_QL80_.jpg",
         title: "Annie Hall (1977)",
         genre: "Romance, Comedy",
@@ -449,7 +443,7 @@ const main = async () => {
         link: "https://youtu.be/OqVgCfZX-yE",
     },
     {
-        year_id: genxM[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/I/91yQY8V1whL._AC_UF894,1000_QL80_.jpg",
         title: "Love Story (1970)",
         genre: "Romance",
@@ -458,7 +452,7 @@ const main = async () => {
         link: "https://youtu.be/eprwTDVTEb8",
     },
     {
-        year_id: genxB[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BZGM3Yzg5NTQtMTlkYS00MzQ1LWIyY2YtYWM0YjkzOWI2OTc3XkEyXkFqcGdeQXVyNDQ5MDYzMTk@._V1_.jpg",
         title: "Doctor Zhivago (1965)",
         genre: "Romance",
@@ -467,7 +461,7 @@ const main = async () => {
         link: "https://youtu.be/CGGr21PilKY",
     },
     {
-        year_id: genxE[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/I/81CMmHKcgQL._AC_UF894,1000_QL80_.jpg",
         title: "The Blue Lagoon (1980)",
         genre: "Romance",
@@ -476,7 +470,7 @@ const main = async () => {
         link: "https://youtu.be/A0UapwJIJn8",
     },
     {
-        year_id: millM[0]._id,
+        year_id: mill[0]._id,
         image: "https://upload.wikimedia.org/wikipedia/en/4/41/Ghost_%281990_movie_poster%29.jpg",
         title: "Ghost (1990)",
         genre: "Romance, Drama",
@@ -485,7 +479,7 @@ const main = async () => {
         link: "https://youtu.be/capS3yV9eY8",
     },
     {
-        year_id: millM[0]._id,
+        year_id: mill[0]._id,
         image: "https://upload.wikimedia.org/wikipedia/en/thumb/0/00/Dirty_Dancing.jpg/220px-Dirty_Dancing.jpg",
         title: "Dirty Dancing (1987)",
         genre: "Romance, Drama",
@@ -494,7 +488,7 @@ const main = async () => {
         link: "https://youtu.be/eIcmQNy9FsM",
     }, 
     {
-        year_id: millE[0]._id,
+        year_id: mill[0]._id,
         image: "https://miro.medium.com/v2/resize:fit:1200/0*5MFFtR8MBLOv1q_Z.jpg",
         title: "Titanic (1997)",
         genre: "Romance, Drama",
@@ -503,7 +497,7 @@ const main = async () => {
         link: "https://youtu.be/CHekzSiZjrY",
     },  
     {
-        year_id: millM[0]._id,
+        year_id: mill[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BYjI5N2E2OTQtNDBjOS00MzZjLTkxNmMtNTBhOGI1NTZiYWZiXkEyXkFqcGdeQXVyMTAyOTE2ODg0._V1_.jpg",
         title: "Pretty Woman (1990)",
         genre: "Romance, Comedy",
@@ -512,7 +506,7 @@ const main = async () => {
         link: "https://youtu.be/2EBAVoN8L_U",
     },
     {
-        year_id: millE[0]._id,
+        year_id: mill[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BNWY1MDJkZGUtZTE2OS00ODZiLTlmNzQtMDZjNzM2ZjkwM2QxXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
         title: "Sleepless in Seattle (1993)",
         genre: "Romance, Comedy",
@@ -521,7 +515,7 @@ const main = async () => {
         link: "https://youtu.be/ahI9LaOGYcE",
     },
     {
-        year_id: genzM[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BNzc3Mzg1OGYtZjc3My00Y2NhLTgyOWUtYjRhMmI4OTkwNDg4XkEyXkFqcGdeQXVyMTU3NDU4MDg2._V1_FMjpg_UX1000_.jpg",
         title: "The Notebook (2004)",
         genre: "Romance, Drama",
@@ -530,7 +524,7 @@ const main = async () => {
         link: "https://youtu.be/BjJcYdEOI0k",
     },
     {
-        year_id: genzB[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BMWFhYjliNjYtYjNhNS00OGExLWFhMjQtNDgwOWYyNWJiYzhmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
         title: "Moulin Rouge! (2001)",
         genre: "Romance, Musical",
@@ -539,7 +533,7 @@ const main = async () => {
         link: "https://youtu.be/2PpgPxjzbkA",
     },
     {
-        year_id: genzM[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BYjQ1ZWFlZDQtZDhjOS00NjdmLTg1MzEtYjM0MzM0MGIxYTU5XkEyXkFqcGdeQXVyMTEyMDcwNw@@._V1_.jpg",
         title: "Eternal Sunshine of the Spotless Mind (2004)",
         genre: "Romance, Drama",
@@ -548,7 +542,7 @@ const main = async () => {
         link: "https://youtu.be/07-QBnEkgXU",
     },
     {
-        year_id: genzE[0]._id,
+        year_id: genz[0]._id,
         image: "https://i.ebayimg.com/images/g/IfkAAMXQ4uJSCAfr/s-l600.jpg",
         title: "500 Days of Summer (2009)",
         genre: "Romance, Drama, Comedy",
@@ -557,7 +551,7 @@ const main = async () => {
         link: "https://youtu.be/PsD0NpFSADM",
     },
     {
-        year_id: genzE[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BMTM2MTI5NzA3MF5BMl5BanBnXkFtZTcwODExNTc0OA@@._V1_FMjpg_UX1000_.jpg",
         title: "Silver Linings Playbook (2012)",
         genre: "Romance, Drama",
@@ -566,7 +560,7 @@ const main = async () => {
         link: "https://youtu.be/QJNdf_7pjb4",
     },
     {
-        year_id: genxE[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BMTg3NjQzMTE2OF5BMl5BanBnXkFtZTYwMDYyMTA5._V1_.jpg",
         title: "The Rescuers (1977)",
         genre: "Animation, Adventure, Comedy",
@@ -575,7 +569,7 @@ const main = async () => {
         link: "https://youtu.be/n1uvsKUdHdM",
     },
     {
-        year_id: genxM[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BYjUwMzhkM2ItMTU2OC00OTQ5LWJlMDUtMzRmYjc0NDUyNGVhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg",
         title: "Robin Hood (1973)",
         genre: "Animation, Adventure, Comedy",
@@ -584,7 +578,7 @@ const main = async () => {
         link: "https://youtu.be/Xj-nIcdHQO8",
     },
     {
-        year_id: genxB[0]._id,
+        year_id: genx[0]._id,
         image: "https://lumiere-a.akamaihd.net/v1/images/p_thejunglebook1967_19869_f10b5016.jpeg",
         title: "The Jungle Book (1967)",
         genre: "Animation, Adventure",
@@ -593,7 +587,7 @@ const main = async () => {
         link: "https://youtu.be/JFsGn_JwzCc",
     },
     {
-        year_id: genxE[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BMTcyMTg4NDc2M15BMl5BanBnXkFtZTgwMzgwMzkwMzE@._V1_.jpg",
         title: "The Many Adventures of Winnie the Pooh (1977)",
         genre: "Animation, Family",
@@ -602,7 +596,7 @@ const main = async () => {
         link: "https://youtu.be/cNO1OUapT2I",
     },
     {
-        year_id: genxE[0]._id,
+        year_id: genx[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BOGExMjIxNTMtY2M2NS00YTg0LTgyMDMtZWMyNDZmODZjZTVkXkEyXkFqcGdeQXVyNjc5NjEzNA@@._V1_FMjpg_UX1000_.jpg",
         title: "The Lord of the Rings (1978)",
         genre: "Animation, Adventure, Fantasy",
@@ -611,7 +605,7 @@ const main = async () => {
         link: "https://youtu.be/wPe6BNPUmI0",
     },
     {
-        year_id: millB[0]._id,
+        year_id: mill[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BNDJlM2E1M2QtNTVmNi00MzNhLTlmZTgtMGM0YjYzYzhjM2JmXkEyXkFqcGdeQXVyNTkxMzEwMzU@._V1_FMjpg_UX1000_.jpg",
         title: "The Secret of NIMH (1982)",
         genre: "Animation, Adventure",
@@ -620,7 +614,7 @@ const main = async () => {
         link: "https://youtu.be/W4xHs01SUA4",
     },
     {
-        year_id: millM[0]._id,
+        year_id: mill[0]._id,
         image: "https://static.wikia.nocookie.net/beautyandthebeast2017/images/c/cd/BATB-1991.jpg/revision/latest?cb=20170319022717",
         title: "Beauty and the Beast (1991)",
         genre: "Animation, Family, Fantasy",
@@ -629,7 +623,7 @@ const main = async () => {
         link: "https://youtu.be/iurbZwxKFUE",
     },
     {
-        year_id: millE[0]._id,
+        year_id: mill[0]._id,
         image: "https://m.media-amazon.com/images/I/71vv-EfM8tL._AC_UF894,1000_QL80_.jpg",
         title: "Toy Story (1995)",
         genre: "Animation, Adventure, Comedy",
@@ -638,7 +632,7 @@ const main = async () => {
         link: "https://youtu.be/v-PjgYDrg70",
     },
     {
-        year_id: millE[0]._id,
+        year_id: mill[0]._id,
         image: "https://lumiere-a.akamaihd.net/v1/images/p_thelionking_19752_1_0b9de87b.jpeg?region=0%2C0%2C540%2C810",
         title: "The Lion King (1994)",
         genre: "Animation, Adventure",
@@ -647,7 +641,7 @@ const main = async () => {
         link: "https://youtu.be/eHcZlPpNt0Q",
     },
     {
-        year_id: millM[0]._id,
+        year_id: mill[0]._id,
         image: "https://i.ebayimg.com/images/g/66oAAOSwKkdiZd11/s-l1200.jpg",
         title: "The Little Mermaid (1989)",
         genre: "Animation, Family",
@@ -656,7 +650,7 @@ const main = async () => {
         link: "https://youtu.be/nPE0f-MB_bQ",
     },
     {
-        year_id: genzB[0]._id,
+        year_id: genz[0]._id,
         image: "https://lumiere-a.akamaihd.net/v1/images/p_mulan_20529_83d3893a.jpeg",
         title: "Mulan (1998)",
         genre: "Animation, Adventure",
@@ -665,7 +659,7 @@ const main = async () => {
         link: "https://youtu.be/HKH7_n425Ss",
     },
     {
-        year_id: genzB[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
         title: "Spirited Away (2001)",
         genre: "Animation, Adventure",
@@ -674,7 +668,7 @@ const main = async () => {
         link: "https://youtu.be/fDUFP7EeXLE",
     },
     {
-        year_id: genzM[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_.jpg",
         title: "The Incredibles (2004)",
         genre: "Animation, Action",
@@ -683,7 +677,7 @@ const main = async () => {
         link: "https://youtu.be/sJCjKQQOqT0",
     },
     {
-        year_id: genzB[0]._id,
+        year_id: genz[0]._id,
         image: "https://upload.wikimedia.org/wikipedia/en/3/3c/Ice_Age_%282002_film%29_poster.jpg",
         title: "Ice Age (2002)",
         genre: "Animation, Adventure, Comedy",
@@ -692,7 +686,7 @@ const main = async () => {
         link: "https://youtu.be/i4noiCRJRoE",
     },
     {
-        year_id: genzB[0]._id,
+        year_id: genz[0]._id,
         image: "https://m.media-amazon.com/images/M/MV5BMTY1NTI0ODUyOF5BMl5BanBnXkFtZTgwNTEyNjQ0MDE@._V1_.jpg",
         title: "Monsters, Inc. (2001)",
         genre: "Animation, Adventure, Comedy",

@@ -12,12 +12,13 @@ body {
     grid-template-areas: 
     "header header header"
     "h1 h1 h1"
-    "group1 group2 group3"
+    "genXMovie millMovie genZMovie"
     "h2 h2 h2"
-    "group4 group5 group6";
+    "genXMusic millMusic genZMusic";
     grid-gap: 0.2rem;
 } 
 header {
+    margin-top: auto;
     font-size: xxx-large;
     grid-area: header;
     text-align: center;
@@ -27,39 +28,45 @@ header {
 }
 #movies {
     grid-area: h1;
-    text-decoration: underline;
-    text-decoration-color: gainsboro;
+    text-shadow: 2px 2px 5px gainsboro;
     text-align: center;
 }
-#group1 {
+button {
+    box-shadow: 0 0 8px 8px white inset;
+    opacity: 75%;
+}
+button:hover {
+    opacity: 100%;
+}
+#genXMovie {
     background-image: url("https://mshanken.imgix.net/cao/bolt/2022-03/1647463313_godfather0422.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 30%;
-    grid-area: group1;
+    grid-area: genXMovie;
     text-align: center;
     color: aliceblue;
     font-size: xx-large;
 }
-#group2 {
+#millMovie {
     background-image: url("https://images.bauerhosting.com/legacy/empire-tmdb/films/680/images/mte63qJaVnoxkkXbHkdFujBnBgd.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=undefined&q=80");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 30%;
-    grid-area: group2;
+    grid-area: millMovie;
     text-align: center;
     color: aliceblue;
     font-size: xx-large;
 }
-#group3 {
+#genZMovie {
     background-image: url("https://cdn.britannica.com/34/201734-050-2B1ECD3E/Dominic-Monaghan-Merry-scene-Elijah-Wood-Frodo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 30%;
-    grid-area: group3;
+    grid-area: genZMovie;
     text-align: center;
     color: aliceblue;
     font-size: xx-large;
@@ -67,37 +74,37 @@ header {
 #music {
     grid-area: h2;
     text-align: center;
-    text-decoration: underline;
+    text-shadow: 2px 2px 5px gainsboro;
 }
-#group4 {
+#genXMusic {
     background-image: url("https://api.time.com/wp-content/uploads/2015/10/queen.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 30%;
-    grid-area: group4;
+    grid-area: genXMusic;
     text-align: center;
     color: aliceblue;
     font-size: xx-large;
 }
-#group5 {
+#millMusic {
     background-image: url("https://cdn.discordapp.com/attachments/1239672941587988562/1247270973825355796/nirvanacover.png?ex=665f6b1d&is=665e199d&hm=6e3f4de234ffc620ec655c7ab699ddf167d1d3f5772d4be3c8aa250bf8b09d59&");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 30%;
-    grid-area: group5;
+    grid-area: millMusic;
     text-align: center;
     color: aliceblue;
     font-size: xx-large;
 }
-#group6 {
+#genZMusic {
     background-image: url("https://media.newyorker.com/photos/5909520d1c7a8e33fb38a644/master/pass/adele-oscars.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 30%;
-    grid-area: group6;
+    grid-area: genZMusic;
     text-align: center;
     color: aliceblue;
     font-size: xx-large;
