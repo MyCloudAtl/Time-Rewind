@@ -1,5 +1,7 @@
 html {
-    background-image: linear-gradient(to right, #614385, #516395, #02AABD, #1D2671, #02AABD, #516395, #614385);
+    /* background-image: linear-gradient(to right, #edf5b3 ,#a5daf6,#e9d8fc, #a5daf6, #e9d8fc,#a5daf6, #edf5b3); */
+    /* background-image: linear-gradient(to right, #FCB69F, #EA8D8D, #1EAE98, #eaaeae, #1EAE98, #EA8D8D, #FCB69F ); */
+    background-image: linear-gradient(to right, #1EAE98, #85bdee, #edf5b3, #4bd9c3, #edf5b3, #85bdee,#1EAE98);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,27 +21,62 @@ html {
     text-align: center;
 }
 p {
-    color:white;
-    background: rgba(15, 32, 16, 0.434);
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    color: white;
+    background: rgba(176, 97, 186, 0.642);
+    text-shadow: 1px 1px 2px black, 0 0 25px #48abe0, 0 0 5px darkblue;
     /* object-fit: cover; */
     
 }
 h1 {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.747);;
-    box-shadow: 0 0 10px 5px #48abe0,
+    box-shadow: 0 0 10px 5px #80bdf1,
             0 0 20px 7px #ebecca,
-            0 0 25px 20px #8a2be2,
-            0 0 30px 25px #ff1493;
+            0 0 25px 20px #f6ffb5,
+            0 0 30px 25px #f6ffb5;
 }
 h2 {
     font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.747);;
 }
 a {
-    color: rgb(255, 47, 0);
-    text-shadow: 0 0 3px black;
+    font-size: large;
+    color: black;
+    text-shadow: 0 0 4px rgb(249, 68, 164);
 }
 a:hover{
     text-shadow: 0 0 3px white;
 }
+#return { 
+    padding: 0.6em 2em; 
+    vertical-align: 45%;
+    border: none; 
+    outline: none; 
+    color: rgb(255, 255, 255); 
+    background: #111; 
+    cursor: pointer; 
+    position: relative; 
+    z-index: 0; 
+    border-radius: 10px; 
+    user-select: none; 
+    -webkit-user-select: none; 
+    touch-action: manipulation; 
+} 
+#return:before {
+    content: ""; 
+    background: linear-gradient( 45deg, #FFBBBB, #EA8D8D,  #FFC371, #BFF098, #A9F1DF , #909df0 , #D8B5FF, #FFBBBB, #EA8D8D  ); 
+    position: absolute; 
+    top: -2px; 
+    left: -2px; 
+    background-size: 400%; 
+    z-index: -1; 
+    filter: blur(5px); 
+    -webkit-filter: blur(5px); 
+    width: calc(100% + 4px); 
+    height: calc(100% + 4px); 
+    animation: glowing-button 20s linear infinite; 
+    transition: opacity 0.3s ease-in-out; border-radius: 10px; 
+} 
+    @keyframes glowing-button { 0% { background-position: 0 0; 
+    } 50% { background-position: 400% 0; 
+    } 100% { background-position: 0 0; } } 

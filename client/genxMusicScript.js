@@ -16,7 +16,6 @@ try {
     }
     const songInfo = await response.json();
 
-    // Filter movies by target year
     const songsWithinYear = songInfo.filter(music => music.year_id === targetYear);
     const musicContainer = document.getElementById('music-container');
             songsWithinYear.forEach(music => {

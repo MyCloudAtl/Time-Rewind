@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to right, #09203F, #537895, #596164, #868F96, #596164, #537895, #09203F);
+    background-image: linear-gradient(to right, #279ff5, #92EFFD, #1EAE98,#6FD6FF, #1EAE98, #92EFFD, #279ff5);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Abril Fatface", serif;
@@ -8,7 +8,7 @@ body {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.3fr 1fr 0.3fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr 1fr 0.3fr 1fr 0.1fr;
     grid-template-areas: 
     "header header header"
     "h1 h1 h1"

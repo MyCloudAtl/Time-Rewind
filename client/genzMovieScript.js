@@ -12,14 +12,12 @@ window.onload = async (event) => {
 
 let targetYear = "66612c28f1731f39869b7438";
 try {
-    // Fetch movies data
     const response = await fetch(movieEndpoint);
     if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
     }
     const moviesData = await response.json();
 
-    // Filter movies by target year
     const moviesMatchingYear = moviesData.filter(movie => movie.year_id === targetYear);
     const movieContainer = document.getElementById('movie-container');
             moviesMatchingYear.forEach(movie => {
