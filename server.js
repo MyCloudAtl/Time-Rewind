@@ -21,7 +21,6 @@ app.get('/', (req, res) => {
 app.get('/songs', musicController.getSongs)
 app.get('/songs/:id', musicController.getSong)
 app.get('/movies', movieController.getMovies)
-// app.get('/moviesByGen/:generation', movieController.getMoviesForGeneration)
 app.get('/movies/:id', movieController.getMovie)
 app.get('/years', yearController.getYears)
 app.get('/years/:id', yearController.getYear)

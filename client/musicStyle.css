@@ -1,0 +1,38 @@
+html {
+    background-image: linear-gradient(to right, #FFECD2, #FCB69F, #A9F1DF , #FFBBBB, #A9F1DF, #FCB69F, #FFECD2);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#music-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "h1 h1 h1"
+    "genXMovie millMovie genZMovie"
+    "h2 h2 h2"
+    "genXMusic millMusic genZMusic";
+    grid-gap: 0.2rem;
+    text-align: center;
+}
+p {
+    color:white;
+    background: rgba(64, 165, 151, 0.434);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 20px;
+}
+a {
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 3px rgb(254, 1, 238);
+}
+a:hover{
+    text-shadow: 0 0 3px white;
+}

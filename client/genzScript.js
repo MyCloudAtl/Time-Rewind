@@ -1,3 +1,4 @@
+
 const yearEndpoint = `http://localhost:3003/years`
 const musicEndpoint = `http://localhost:3003/songs`
 const movieEndpoint = `http://localhost:3003/movies`
@@ -9,7 +10,7 @@ const movies = `http://localhost:3003/movies`
 window.onload = async (event) => {
     await console.log("page is fully loaded");
 
-let targetYear = "66612c28f1731f39869b7436";
+let targetYear = "66612c28f1731f39869b7438";
 try {
     // Fetch movies data
     const response = await fetch(movieEndpoint);
@@ -39,6 +40,3 @@ try {
     console.error('Error fetching movies:', error);
 }
 };
-
-
-

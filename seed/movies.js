@@ -111,7 +111,7 @@ const main = async () => {
     },
     {
         year_id: genz[0]._id,
-        image: "https://static.wikia.nocookie.net/disney/images/6/66/The_sixth_sense.jpg/revision/latest/scale-to-width-down/1000?cb=20230311195554",
+        image: "https://resizing.flixster.com/U49qiKVKPFx01d1L-bq3sVN10d8=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p23611_p_v10_ag.jpg",
         title: "The Sixth Sense (1999)",
         genre: "Horror",
         rated: "Rated PG-13",
@@ -201,7 +201,7 @@ const main = async () => {
     },
     {
         year_id: mill[0]._id,
-        image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.scriptslug.com%2Fscript%2Fghostbusters-1989&psig=AOvVaw0KzzBjRGCMWhdjyKVpczOJ&ust=1717271685242000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCICBwdzVuIYDFQAAAAAdAAAAABAE",
+        image: "https://www.sonypictures.com/sites/default/files/styles/max_560x840/public/title-key-art/ghostbusters_onesheet_1400x2100.png?itok=o0LT09zD",
         title: "Ghostbusters (1984)",
         genre: "Comedy",
         rated: "Rated PG",
@@ -615,7 +615,7 @@ const main = async () => {
     },
     {
         year_id: mill[0]._id,
-        image: "https://static.wikia.nocookie.net/beautyandthebeast2017/images/c/cd/BATB-1991.jpg/revision/latest?cb=20170319022717",
+        image: "https://resizing.flixster.com/hxGLPPMf0SVNNNnWRsA4zTyk_As=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2Q1OWQzMzQ0LWY0YTgtNGI1ZS05NjRlLTk5NWMwMjVhYjQ0Yy53ZWJw",
         title: "Beauty and the Beast (1991)",
         genre: "Animation, Family, Fantasy",
         rated: "Rated G",

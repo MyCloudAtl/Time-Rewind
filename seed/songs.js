@@ -53,7 +53,8 @@ const main = async () => {
     },
     {
       year_id: genx[0]._id,
-      cover: "https://static.wikia.nocookie.net/eagles/images/6/69/Screenshot_2015-09-27-11-23-45_1.jpg/revision/latest?cb=20150927093225",
+      
+      cover: "https://i.discogs.com/l-RgrkR3_PqJmaRZvwJlvhnu8cV_3ekapSTupXBHUuM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg0NDY0/MzYtMTQ2MTc4MTAz/NC0yMDE2LmpwZWc.jpeg",
       title: "Hotel California (1976)",
       artist: "Eagles",
       genre: "Rock",
@@ -277,7 +278,7 @@ const main = async () => {
     },
     {
       year_id: mill[0]._id,
-      cover: "https://static.wikia.nocookie.net/gunsnfnroses/images/a/a5/Gunsnr-sweetc.jpg/revision/latest?cb=20110621012416",
+      cover: "https://m.media-amazon.com/images/M/MV5BMTU0OGY4NTgtZDU5Yy00NTAxLWI5MGYtZDUyNGI2YTMzNDVkXkEyXkFqcGdeQXVyNDE4OTY5NzI@._V1_FMjpg_UX1000_.jpg",
       title: "Sweet Child o' Mine (1988)",
       artist: "Guns N' Roses",
       genre: "Rock",

@@ -88,7 +88,7 @@ button:hover {
     font-size: xx-large;
 }
 #millMusic {
-    background-image: url("https://cdn.discordapp.com/attachments/1239672941587988562/1247270973825355796/nirvanacover.png?ex=665f6b1d&is=665e199d&hm=6e3f4de234ffc620ec655c7ab699ddf167d1d3f5772d4be3c8aa250bf8b09d59&");
+    background-image: url("/kassNirvana.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
