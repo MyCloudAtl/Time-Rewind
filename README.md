@@ -20,7 +20,6 @@ Create an wireframe outline for your webpage.*(How you want it to look and opera
 1. Javascript
 2. CSS
 3. HTMl
-4. VEED.io (mp4)
 5. Mongoose
 6. Express.js
 7. Cors

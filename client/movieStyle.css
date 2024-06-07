@@ -10,13 +10,13 @@ html {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "header header header"
+    /* grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr; */
+    /* grid-template-areas:  */
+    /* "header header header"
     "h1 h1 h1"
     "genXMovie millMovie genZMovie"
     "h2 h2 h2"
-    "genXMusic millMusic genZMusic";
+    "genXMusic millMusic genZMusic"; */
     grid-gap: 0.2rem;
     text-align: center;
 }
