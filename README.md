@@ -2,7 +2,7 @@
 <img src="./mainpage.png">
 
 # Title: 
-**User Story:** As we get older we are constantly experiencing new things and gaining new memories. What about the old? Well those memories tend to fade but when they are triggered we tend to relive those moments. This webpage is purely being created so we can rememeber. Our OWN memory history - a history of our youth and what we grew up listening to and watching. I hope you enjoy the walk down memory lane!
+**User Story:** As we get older we are constantly experiencing new things and gaining new memories. What about the old? Well those memories tend to fade but when they are triggered we tend to relive those moments. This webpage is purely being created so we can rememeber. Our *OWN Memory History* - a history of our youth and what we grew up listening to and watching. I hope you enjoy the walk down memory lane!
 
 ## Personal Daily Schedule and Goals:
 1. Friday - Create all files, try to get skeleton built in the model & seeds
@@ -14,15 +14,15 @@
 7. Thursday - Make sure pages are communicating and wrap up finishing touches in CSS.
 
 ### Technologies used:
-1. Javascript
-2. CSS
-3. HTMl
-5. Mongoose
-6. Express.js
-7. Cors
-8. Axios/Api
-9. ThunderClient
-10. Morgan & Body-Parser
+1. ```Javascript```
+2. ```CSS```
+3. ```HTMl```
+5. ```Mongoose```
+6. ```Express.js```
+7. ```Cors```
+8. ```Axios/Api```
+9. ```ThunderClient```
+10. ```Morgan & Body-Parser```
 
 ### Steps to making the code:
 1. Spend time whiteboarding, coming up with what information you want displayed on your page, and what your seed files will need to look like.
@@ -45,20 +45,20 @@
 3. Links connected to both group types carrying the user to the music videos and watch trailers.
 
 **Possible Future Enhancements:**
-* Adding buttons that allow you to search by genre on the corresponding HTML page.
-* Adding a scrolling feature to the return home button so it follows the user down the page.
-* Adding a way for users to signin and leave a rating, plus allow them to log what they've seen. (Like a check off list)
-* Adding a submission area to allow users to add movies/music to the lists.
+>* Adding buttons that allow you to search by genre on the corresponding HTML page.
+>* Adding a scrolling feature to the return home button so it follows the user down the page.
+>* Adding a way for users to signin and leave a rating, plus allow them to log what they've seen. (Like a check off list)
+>* Adding a submission area to allow users to add movies/music to the lists.
 
 ## Attributions & Resources:
 1. Images sourced via google search, links provided in code.
 2. Music videos and movie trailers linked via youtube. 
-3. Buttons and Windows code referenced from https://www.w3schools.com/js/js_window_location.asp
+3. Buttons and Windows code referenced from [W3S](https://www.w3schools.com/js/js_window_location.asp)
 4. A mixture of referencing old code, w3schools, and chatgpt for creation of functions.
 5. CSS editing:
-    * https://www.w3schools.com/css/css3_gradients.asp (referenced for gradients)
-    * https://getcssscan.com/css-buttons-examples (referenced for return button) *** There is a lot of cool unique code there ***
-    * https://unused-css.com/tools/box-shadow-generator?p=21EYcwvMAMAEMIyQA4A9oFYXQMQBYAcAhsAKaQA0MMATEqgOyZbEkDGLBFs0VGqNjhKiSqcYAZlrde2AGYy4OAJxigA & https://www.w3schools.com/css/css3_shadows.asp (referenced for shadows)
+    * [W3S](https://www.w3schools.com/css/css3_gradients.asp) (referenced for gradients)
+    * [CSS Scan](https://getcssscan.com/css-buttons-examples) (referenced for return button) *** There is a lot of cool unique code there ***
+    * [Unused CSS](https://unused-css.com/tools/box-shadow-generator?p=21EYcwvMAMAEMIyQA4A9oFYXQMQBYAcAhsAKaQA0MMATEqgOyZbEkDGLBFs0VGqNjhKiSqcYAZlrde2AGYy4OAJxigA) & [W3S](https://www.w3schools.com/css/css3_shadows.asp) (referenced for shadows)
 
 # Finished product screenshot:
 <img src="./finishedMain.png">
