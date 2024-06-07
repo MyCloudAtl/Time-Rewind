@@ -6,10 +6,9 @@ const logger = require('morgan')
 const movieController = require('./controllers/movieController')
 const musicController = require('./controllers/musicController')
 const yearController = require('./controllers/yearController')
-
 const PORT = process.env.PORT || 3003
-
 const app = express()
+
 app.use(cors())
 app.use(bodyParser.json())
 app.use(logger('dev'))

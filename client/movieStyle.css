@@ -1,6 +1,4 @@
 html {
-    /* background-image: linear-gradient(to right, #edf5b3 ,#a5daf6,#e9d8fc, #a5daf6, #e9d8fc,#a5daf6, #edf5b3); */
-    /* background-image: linear-gradient(to right, #FCB69F, #EA8D8D, #1EAE98, #eaaeae, #1EAE98, #EA8D8D, #FCB69F ); */
     background-image: linear-gradient(to right, #1EAE98, #85bdee, #edf5b3, #4bd9c3, #edf5b3, #85bdee,#1EAE98);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -10,13 +8,6 @@ html {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr; */
-    /* grid-template-areas:  */
-    /* "header header header"
-    "h1 h1 h1"
-    "genXMovie millMovie genZMovie"
-    "h2 h2 h2"
-    "genXMusic millMusic genZMusic"; */
     grid-gap: 0.2rem;
     text-align: center;
 }
@@ -24,8 +15,6 @@ p {
     color: white;
     background: rgba(176, 97, 186, 0.642);
     text-shadow: 1px 1px 2px black, 0 0 25px #48abe0, 0 0 5px darkblue;
-    /* object-fit: cover; */
-    
 }
 h1 {
     text-align: center;

@@ -1,7 +1,3 @@
-const genXMovie = document.querySelector("#genXMovie")
-const millMovie = document.querySelector("#millMovie")
-const genzMovie = document.querySelector("#genZMovie")
-
 genXMovie.addEventListener ('click', function (event) {
     window.location.href = "genxMovieIndex.html";
 });
