@@ -1,10 +1,4 @@
-const yearEndpoint = `http://localhost:3003/years`
-const musicEndpoint = `http://localhost:3003/songs`
 const movieEndpoint = `http://localhost:3003/movies`
-const genXMovieButton = document.getElementById('genx')
-const genXMovie = document.querySelector("#genXMovie")
-const millMovie = document.querySelector("#millMovie")
-const movies = `http://localhost:3003/movies`
 
 window.onload = async (event) => {
     await console.log("page is fully loaded");
@@ -16,7 +10,6 @@ try {
         throw new Error(`HTTP error! Status: ${response.status}`);
     }
     const moviesData = await response.json();
-
     const moviesMatchingYear = moviesData.filter(movie => movie.year_id === targetYear);
     const movieContainer = document.getElementById('movie-container');
             moviesMatchingYear.forEach(movie => {

@@ -1,9 +1,4 @@
-const yearEndpoint = `http://localhost:3003/years`
 const musicEndpoint = `http://localhost:3003/songs`
-const movieEndpoint = `http://localhost:3003/movies`
-const genZMusicButton = document.getElementById('genz')
-const genZMusic = document.querySelector("#genZMusic")
-const music = `http://localhost:3003/songs`
 
 window.onload = async (event) => {
     await console.log("page is fully loaded");
@@ -15,7 +10,6 @@ try {
         throw new Error(`HTTP error! Status: ${response.status}`);
     }
     const songInfo = await response.json();
-
     const songsWithinYear = songInfo.filter(music => music.year_id === targetYear);
     const musicContainer = document.getElementById('music-container');
             songsWithinYear.forEach(music => {
